@@ -13,6 +13,9 @@ class Stock {
 
 }
 
+/**
+ * We will set some stock values here
+ */
 fun main(args: Array<String>) {
     val stock = Stock()
     stock.value = 10   // Outputs: value: [ 0 ] -> [ 10 ]
