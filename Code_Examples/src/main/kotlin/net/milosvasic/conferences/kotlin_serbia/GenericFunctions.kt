@@ -10,6 +10,9 @@ class EngineDiagnostics {
     }
 }
 
+/**
+ * Example of use.
+ */
 fun main(args: Array<String>) {
     val truckEngine = TruckEngine()
     val rocketEngine = RocketEngine()
