@@ -1,2 +1,2 @@
-# Kotlin-Serbia
-Code examples for Kotlin Serbia meetup.
+# Kotlin Serbia
+Code examples for Kotlin Serbia Meetup.

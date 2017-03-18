@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath files("libs/Groot-1.0.0-Alpha-5-SNAPSHOT.jar")
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.0"
+        classpath "org.jetbrains.kotlin:kotlin-reflect:1.1.0"
+    }
+}
+
+apply plugin: "groot"
+apply plugin: "groot-kotlin"
+
+final alpha = 0
+final beta = 0
+final version = 1
+final secondaryVersion = 0
+final tertiaryVersion = 0
+final projectPackage = "kotlin_serbia"
+final projectGroup = "net.milosvasic.conferences"
+
+groot.kotlin.project.setup(
+        alpha,
+        beta,
+        version,
+        secondaryVersion,
+        tertiaryVersion,
+        projectGroup,
+        projectPackage
+)
+
+String fullPackage = groot.kotlin.project.projectPackage
+String fullVersion = groot.kotlin.project.projectVersion
