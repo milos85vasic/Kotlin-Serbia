@@ -60,6 +60,12 @@ fun main(args: Array<String>) {
     mutableSet.forEach(::println) // Outputs 2 and 1. (:: Means direct access to reference)
 
     /**
+     * Accessing to collection elements
+     */
+    val x = mutableList[0] // Get item at index 1
+    val y = mutableMap["something"] // Get item with value 1 mapped to key 'something'
+
+    /**
      * Iteration through items
      */
     mutableList.forEach { x -> doSomething(x) }
