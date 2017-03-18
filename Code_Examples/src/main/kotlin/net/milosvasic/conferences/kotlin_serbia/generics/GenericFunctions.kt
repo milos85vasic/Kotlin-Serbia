@@ -1,4 +1,4 @@
-package net.milosvasic.conferences.kotlin_serbia
+package net.milosvasic.conferences.kotlin_serbia.generics
 
 class EngineDiagnostics {
     /**

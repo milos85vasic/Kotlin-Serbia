@@ -1,4 +1,6 @@
-package net.milosvasic.conferences.kotlin_serbia
+package net.milosvasic.conferences.kotlin_serbia.collections
+
+import net.milosvasic.conferences.kotlin_serbia.doSomething
 
 /**
  * Examples of immutable and mutable:
