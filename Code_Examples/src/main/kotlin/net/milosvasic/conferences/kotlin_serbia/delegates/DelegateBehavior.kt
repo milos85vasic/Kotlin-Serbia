@@ -1,8 +1,5 @@
 package net.milosvasic.conferences.kotlin_serbia.delegates
 
-import kotlin.properties.ReadWriteProperty
-import kotlin.reflect.KProperty
-
 /**
  * Delegating behavior
  */
