@@ -3,7 +3,7 @@ package net.milosvasic.conferences.kotlin_serbia.generics
 class EngineDiagnostics {
     /**
      * Method check engine is generic.
-     * It accepts only classes that are extending Engine class.
+     * It only takes classes that are extending Engine class.
      */
     fun <T : Engine> checkEngine(engine: T) {
         println(engine)

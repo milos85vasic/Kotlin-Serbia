@@ -25,8 +25,8 @@ fun main(args: Array<String>) {
     /**
      * Immutable sets
      */
-    val immutableSet = setOf(2, 2, 3) // Will have only 2 and 3.
-    immutableSet.forEach(::println) // Outputs 2 and 3. (:: Means direct access to reference)
+    val immutableSet = setOf(2, 2, 3) // It only has members 2 and 3.
+    immutableSet.forEach(::println) // Outputs 2 and 3 (:: meaning direct access to reference)
 
     /**
      * Mmutable lists
@@ -35,9 +35,9 @@ fun main(args: Array<String>) {
     val mutableList2 = mutableListOf("Some", "Word")
     val mutableList3 = mutableListOf<String>()
 
-    // Then we may add or remove items:
+    // We can also remove some members.
     mutableList2.remove("Word")
-    // Or add
+    // or add
     mutableList3.add("Car")
     mutableList2.add("Plane")
     mutableList2.addAll(mutableList3)
@@ -51,33 +51,33 @@ fun main(args: Array<String>) {
     /**
      * Mutable sets
      */
-    val mutableSet = mutableSetOf(2, 2, 3) // Will have only 2 and 3.
+    val mutableSet = mutableSetOf(2, 2, 3)  // It will have only 2 and 3 without any duplicates.
     mutableSet.add(1)
     mutableSet.add(4)
     mutableSet.add(5)
     mutableSet.add(55)
     mutableSet.remove(5)
     mutableSet.remove(55)
-    mutableSet.removeIf { x -> x > 2 }
-    mutableSet.forEach(::println) // Outputs 2 and 1. (:: Means direct access to reference)
+    mutableSet.removeIf { x -> x > 2 } // // We remove all members that are > 2
+    mutableSet.forEach(::println) // Outputs 2 and 1 (:: meaning direct access to reference)
 
     /**
      * Accessing to collection elements
      */
-    val x = mutableList[0] // Get item at index 1
-    val y = mutableMap["something"] // Get item with value 1 mapped to key 'something'
+    val x = mutableList[0] // Access to element at first position:
+    val y = mutableMap["something"] // We get element mapped to "something” key
 
     /**
      * Iteration through items
      */
     mutableList.forEach { x -> doSomething(x) }
-    // or (convert lambda to reference)
+    // or (conversion of lambda to reference)
     mutableList.forEach(::doSomething)
-    // if we need index for item
+    // if we need index for each element:
     mutableList.forEachIndexed { index, item -> doSomething(index, item) }
-    // or we want to filter it
+    // or we can apply filter if needed:
     mutableList
-            .filter { x -> x >= 4 }
-            .forEach(::println) // Filters from 2, 4, 6 items that are >= 4 and outputs 4 and 6
+            .filter { x -> x >= 4 } // It filters items 2, 4 and 6 by condition >= 4.
+            .forEach(::println)     // Output is 4 and 6.
 
 }

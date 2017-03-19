@@ -3,7 +3,7 @@ package net.milosvasic.conferences.kotlin_serbia.delegates
 import kotlin.properties.Delegates
 
 /**
- * Stock value with observer delegate
+ * Stock value with observer delegate.
  */
 class Stock {
 
@@ -14,7 +14,7 @@ class Stock {
 }
 
 /**
- * We will set some stock values here
+ * We will set stock values here.
  */
 fun main(args: Array<String>) {
     val stock = Stock()

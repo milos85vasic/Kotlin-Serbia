@@ -6,14 +6,14 @@ import kotlin.reflect.KProperty
 /**
  * Delegating properties
  *
- * We delegate salary property to SalaryDelegate class
+ * We delegate salary property to SalaryDelegate class.
  */
 class Worker {
     var salary: Int by SalaryDelegate(BaseSalaryCalculation())
 }
 
 /**
- * To become property delegate we must implement ReadWriteProperty!
+ * To become property delegate first we must implement {@code ReadWriteProperty}
  */
 class SalaryDelegate(val calculation: SalaryCalculation) : ReadWriteProperty<Any, Int> {
     private var salary = 0
@@ -28,7 +28,7 @@ class SalaryDelegate(val calculation: SalaryCalculation) : ReadWriteProperty<Any
 }
 
 /**
- * We define some additional classes needed to calculate salary.
+ * We define some additional classes that are needed to calculate salary.
  */
 class BaseSalaryCalculation : SalaryCalculation {
     override fun calculate(salaryBase: Int): Int {
@@ -41,7 +41,7 @@ interface SalaryCalculation {
 }
 
 /**
- * We try our code
+ * Finally, we run our code
  */
 fun main(args: Array<String>) {
     val worker = Worker()

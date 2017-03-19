@@ -3,7 +3,7 @@ package net.milosvasic.conferences.kotlin_serbia.delegates
 /**
  * Delegating behavior
  */
-class Traveling(fly: Flying) : Flying by fly // We delegate Flying to passed Flying instance - fly
+class Traveling(fly: Flying) : Flying by fly // We delegate Flying to passed Flying instance.
 
 
 
