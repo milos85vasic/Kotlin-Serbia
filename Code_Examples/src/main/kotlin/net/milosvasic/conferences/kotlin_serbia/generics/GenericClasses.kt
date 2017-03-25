@@ -34,10 +34,6 @@ class Sorter<T : Comparable<T>>(items: List<T>) { // T is produced and consumed 
                                                   // T in this example also must extend Comparable.
     private val sorted = items.sorted()
 
-    init {
-        items.sorted()
-    }
-
     fun getMax(): T {
         return sorted.last()
     }
